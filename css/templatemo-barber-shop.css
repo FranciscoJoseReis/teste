@@ -11,42 +11,42 @@ https://templatemo.com/tm-585-barber-shop
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #d6a354;
-  --secondary-color:              #c12828;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #c12828;
-  --custom-btn-bg-hover-color:    #FDBB2D;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color: #ffffff;
+  --primary-color: #d6a354;
+  --secondary-color: #c12828;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #c12828;
+  --custom-btn-bg-hover-color: #FDBB2D;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #B22727;
 
-  --body-font-family:             'Unbounded', cursive;
+  --body-font-family: 'Unbounded', cursive;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  20px;
-  --btn-font-size:                16px;
-  --copyright-font-size:          14px;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --btn-font-size: 16px;
+  --copyright-font-size: 14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-thin:             200;
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
@@ -107,7 +107,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -151,7 +151,7 @@ strong {
   opacity: 0.45;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
 
@@ -267,7 +267,7 @@ strong {
   position: relative;
 }
 
-#sidebarMenu .nav-link.active, 
+#sidebarMenu .nav-link.active,
 #sidebarMenu .nav-link:hover {
   color: var(--white-color);
 }
@@ -518,7 +518,7 @@ strong {
   font-size: var(--copyright-font-size);
   margin-left: auto;
   padding: 5px 20px;
-    color: #000000;
+  color: #000000;
 }
 
 .services-info {
@@ -596,9 +596,11 @@ strong {
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
+
 .google-map {
   border-radius: var(--border-radius-medium);
   filter: hue-rotate(45deg);
+
 }
 
 .contact-block-wrap {
@@ -796,7 +798,7 @@ strong {
   .custom-block {
     display: none;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -850,4 +852,3 @@ strong {
     padding: 35px;
   }
 }
-
