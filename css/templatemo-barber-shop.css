@@ -127,7 +127,13 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
-
+ .img {
+   display: block;
+   /* Certifique-se de que a imagem seja exibida como um bloco */
+   margin: 0 auto;
+   /* Defina margens superior e inferior como 0 e centralize a imagem horizontalmente */
+   max-width: 800px;
+ }
 
 /*---------------------------------------
   SECTION               
