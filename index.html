@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
     <!--Script-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -36,26 +37,24 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-
-            <span class="d-block d-lg-none" style="font-size: 15px;"><img src="assets/img/logo.png" alt="" width="20%">reflexivo de aprendizagem</span>
+            <span class="d-block d-lg-none" style="font-size: 13px;"><img src="assets/img/logo.png" alt="" width="20%">reflexivo de aprendizagem</span>
             <span class="d-none d-lg-block">
                 <img src="assets/img/logo.png" alt=""><br>reflexivo de aprendizagem<br>
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png"
                     alt="..." /></span>
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-
-            <div id="current_date" style="color: aliceblue;"></div>
-            <script>
-                var data = moment().locale('pt-br').format('dddd, D [de] MMMM [de] YYYY');
-                document.getElementById("current_date").innerHTML = data;
-            </script>
-
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div id="current_date" style="color: white;"></div>
+                        <script>
+                        var data = moment().locale('pt-pt').format('dddd, D [de] MMMM [de] YYYY');
+                        document.getElementById("current_date").innerHTML = data;
+                        </script>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">Apresentação</a>
                 </li>
@@ -86,10 +85,8 @@
                         href="https://franciscojosereis.github.io/portefolio/" target="\">Francisco Reis</a>
                 </li>
             </ul>
-
         </div>
     </nav>
-
     <!-- Page Content-->
     <div class="container-fluid p-0">
         <!-- About-->
@@ -99,8 +96,7 @@
                     Francisco
                     <span class="text-primary">Reis</span>
                 </h1>
-                <div class="subheading mb-5">
-                    3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                <div class="subheading mb-5">Escalos De Baixo, Castelo Branco ·
                     <a href="mailto:fjreis@outlook.com">fjreis@outlook.com</a>
                 </div>
                 <p class="lead mb-5">
