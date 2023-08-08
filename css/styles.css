@@ -4526,7 +4526,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-#page-top {
+.page-top {
   background: url(/assets/img/fundo.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
