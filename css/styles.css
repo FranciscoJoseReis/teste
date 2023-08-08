@@ -4526,6 +4526,15 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+#page-top {
+  background: url(/assets/img/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
 .page-link {
   position: relative;
   display: block;
