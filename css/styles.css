@@ -97,9 +97,8 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
- 
+  color: var(--bs-white);
   text-align: var(--bs-body-text-align);
-  background-image: url('/assets/img/fundo.jpg');
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
