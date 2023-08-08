@@ -79,6 +79,20 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 5px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
 *,
 *::before,
 *::after {
