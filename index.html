@@ -1,873 +1,1015 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="PT">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Meu Portfólio </title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
-    <!--Script-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function myFunction() {
-            swal.fire({
-                position: 'top',
-                title: "Técnico/a Auxiliar de Farmácia",
-                text: "A obtenção da qualificação de Técnico/a Auxiliar de Farmácia a partir de uma formação desenvolvida com base neste referencial habilita o exercício de funções de coadjuvação na área farmacêutica, nos termos da Deliberação do INFARMED, n.º 396/2017, de 17 de maio. Na qualificação de Técnico/ a Auxiliar de Farmácia, na oferta educativa e formativa Cursos Profissionais, o elenco modular da disciplina de Matemática corresponderá a uma combinação de módulos, a selecionar de entre os que estão definidos no quadro constante no n.º 5.2 Diversificação do Elenco Modular, para a carga horária de 100h do programa da respetiva disciplina, de forma a perfazer 150h. Devem ser respeitados os critérios de precedência estabelecidos no referido quadro.",
-                width: 500,
-                hight: 600,
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Meu Portfólio</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+  <!--Script-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function myFunction() {
+      swal.fire({
+        position: 'top',
+        title: "Técnico/a Auxiliar de Farmácia",
+        text: "A obtenção da qualificação de Técnico/a Auxiliar de Farmácia a partir de uma formação desenvolvida com base neste referencial habilita o exercício de funções de coadjuvação na área farmacêutica, nos termos da Deliberação do INFARMED, n.º 396/2017, de 17 de maio. Na qualificação de Técnico/ a Auxiliar de Farmácia, na oferta educativa e formativa Cursos Profissionais, o elenco modular da disciplina de Matemática corresponderá a uma combinação de módulos, a selecionar de entre os que estão definidos no quadro constante no n.º 5.2 Diversificação do Elenco Modular, para a carga horária de 100h do programa da respetiva disciplina, de forma a perfazer 150h. Devem ser respeitados os critérios de precedência estabelecidos no referido quadro.",
+        width: 500,
+        hight: 600,
 
-            });
-        }
-    </script>
+      });
+    }
+  </script>
 </head>
 
-<body class="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none" style="font-size: 13px;"><img src="assets/img/logo.png" alt=""
-                    width="18%">reflexivo de aprendizagem</span>
-            <span class="d-none d-lg-block">
-                <img src="assets/img/logo.png" alt=""><br>reflexivo de aprendizagem<br>
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png"
-                    alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <div id="current_date" style="color: white;"></div>
-                    <script>
-                        var data = moment().locale('pt-pt').format('dddd, D [de] MMMM [de] YYYY');
-                        document.getElementById("current_date").innerHTML = data;
-                    </script>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">Apresentação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Autobiografia">Autobiografia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Estudos">Estudos & Certificações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Cursos">Curso</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#Referencial">Referencial</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#estagio">Estágio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#final">Balanço final do curso</a>
-                </li>
-
-                <li class="nav-link js-scroll-trigger">
-                    Copyright&copy; 2023.Portfólio TAF06 Designed by <a class="nav-link js-scroll-trigger"
-                        href="https://franciscojosereis.github.io/portefolio/" target="\">Francisco Reis</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Francisco
-                    <span class="text-primary">Reis</span>
-                </h1>
-                <div class="subheading mb-5">Escalos De Baixo, Castelo Branco ·
-                    <a href="mailto:fjreis@outlook.com">fjreis@outlook.com</a>
-                </div>
-                <p class="lead mb-5">
-                    Bem-vindo ao meu portfólio de aprendizagem. <br>
-                    O meu nome é Francisco Reis e criei este sítio web para mostrar o meu
-                    progresso no curso Técnico Auxiliar de Farmácia e as competências que adquiri.
-                    <br>
-                    Aqui, observará a minha trajetória, incluindo autobiografia, descrição do curso, referencial e
-                    estágio.
-                    <br>
-                    Começo por apresentar a minha formação académica e certificações. <br>
-                    Depois, detalho o curso, abordando Nível QNQ/QEQ, área de educação e objetivos. <br>
-                    O referencial do curso traz as minhas reflexões sobre os módulos e a sua relação com a minha
-                    formação.
-                    <br>
-                    Depois, falo sobre o meu local de estágio e a
-                    experiência que adquiri durante essa etapa. Descrevo as atividades que realizei e como elas
-                    contribuíram
-                    para
-                    o meu
-                    desenvolvimento pessoal e profissional. <br>
-                    Finalmente, apresento o balanço final do curso, onde compartilho os meus
-                    pensamentos finais sobre a minha jornada de aprendizado e os resultados que consegui alcançar. Este
-                    será
-                    um
-                    momento para
-                    refletir sobre o que aprendi e como aplico esse conhecimento na minha carreira. <br>
-                    Espero que este portfólio de aprendizagem possa fornecer uma visão geral do meu percurso de formação
-                    e
-                    demonstrar o meu
-                    compromisso em me tornar um profissional qualificado e experiente. Obrigado por visitar o meu
-                    portfólio
-                    e
-                    espero que
-                    encontre informações valiosas aqui.
-                </p>
-                <div class="social-icons">
-                    <a class="social-icon"
-                        href="https://www.linkedin.com/in/francisco-reis-9541a9266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bqnbo3G08QPOTZ%2FMqmdS0vQ%3D%3D"
-                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://franciscojosereis.github.io/portefolio/" target="_blank"><i
-                            class="fa-regular fa-circle-user"></i></a>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Autobiografia-->
-        <section class="resume-section" id="Autobiografia">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Autobiografia</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Sobre mim</h3>
-                        <div class="subheading mb-3"></div>
-                        <p class="lead m-5">
-                            O meu nome é Francisco José Ramos Reis, nasci em 12 de junho de 1968 na pequena aldeia de
-                            Escalos de
-                            Baixo, no concelho
-                            de Castelo Branco. Os meus pais eram emigrantes e, por isso, vivi com eles em França. Após
-                            os meus pais
-                            regressaram a
-                            Portugal, tinha eu 18 anos, comecei a trabalhar em vários empregos até me estabelecer como
-                            ladrilhador
-                            na
-                            construção
-                            civil. <br>
-                            Sempre gostei de conviver com os amigos e foi através desses convívios que descobri a minha
-                            paixão pelo
-                            xadrez, joguei
-                            numa equipa da 3.ª divisão, tendo sido, em 1997, vice-campeão distrital em Castelo Branco. A
-                            paixão pela
-                            informática
-                            também surgiu através desses convívios. Paixão que me levou a voltar aos estudos, onde
-                            através do
-                            programa
-                            das novas
-                            oportunidades fiz uma formação EFA para concluir o nível 3 , na escola secundária de Santo
-                            André. Depois
-                            em 2011 iniciei
-                            um curso NS PRO - Técnico de Informática – Sistemas, nessa altura residia no Barreiro.
-                            Barreiro onde
-                            vivi
-                            14
-                            anos, até a data do falecimento da minha esposa em 2019. <br>
-                            Após a morte da minha esposa, tive de regressar à casa dos meus pais, em Castelo Branco.
-                            Devido à
-                            precariedade do
-                            trabalho na construção e à pandemia, que afetou muito o setor da construção civil, fiquei
-                            desempregado.
-                            Para encontrar
-                            alternativas de trabalho, comecei a trabalhar num call center. Mas, para melhorar as minhas
-                            perspetivas
-                            de
-                            carreira,
-                            decidi investir em formação profissional. Em novembro de 2020, iniciei o curso NS PRO -
-                            Técnico de
-                            Gestão
-                            do Ambiente,
-                            mas não pude ignorar a minha paixão pela informática e voltei para o curso NS PRO - Técnico
-                            de
-                            Informática
-                            – Sistemas,
-                            que tinha deixado por concluir. Concluí com êxito essa formação em maio de 2022. <br>
-                            Embora não tenha conseguido colocação na empresa onde fiz estágio, devido à pandemia, não me
-                            deixei
-                            desanimar e
-                            continuei a procurar oportunidades de formação e desenvolvimento profissional. Foi assim que
-                            encontrei o
-                            curso NS PRO -
-                            Técnico Auxiliar de Farmácia na página do IEFP. Como a área da saúde tem muita procura,
-                            acredito que
-                            este
-                            curso será
-                            valioso tanto financeiramente quanto pessoalmente, permitindo-me relançar a minha carreira e
-                            a minha
-                            vida
-                            no mercado de
-                            trabalho.
-                            Com a minha experiência de vida e a minha dedicação aos estudos, estou confiante de que
-                            encontrarei uma
-                            oportunidade de
-                            trabalho gratificante e contribuirei para a sociedade de maneira positiva. Apesar dos altos
-                            e baixos,
-                            estou feliz com a
-                            minha vida e grato pelas oportunidades que tenho tido. Sinto-me otimista relativamente ao
-                            futuro e
-                            ansioso
-                            por ver o que
-                            o destino me reserva.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Estudos-->
-        <section class="resume-section" id="Estudos">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Estudos & Certificações</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <ul class="fa-ul mb-3" style="font-size: 17px;">
-                            <li>
-                                <i class="fa-li fa fa-university text-warning"></i>
-                                Ensino secundário:
-                                <h5>12.º ano — Modalidade: Curso EFA (EFA)</h5>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-file  commons text-warning"></i>
-                                Qualificação Profissional:
-                                <h5>Técnico/a de Gestão do Ambiente — Estado Profissional: Certificado Parcial</h5>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-certificate text-warning"></i>
-                                Qualificação Profissional:
-                                <h5>Técnico/a de Informática - Sistemas — Estado Profissional: Certificado</h5>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-book text-warning"></i>
-                                Qualificação Profissional:
-                                <h5>Técnico/a Auxiliar de Farmácia — Estado Profissional: Inscrito</h5>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Skills-->
-        <section class="resume-section" id="Cursos">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Curso</h2>
-                <div class="subheading mb-3">Técnico/a Auxiliar de Farmácia</div>
-                <table class="lead m-5">
-                    <tr>
-                        <td>
-                            <strong>Nível QNQ/QEQ:</strong> 4
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Código:</strong> 727366
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Criado em:</strong> 2018-12-29
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Data da última alteração</strong> 2020-07-22
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Área de educação e formação:</strong> 727 - Ciências Farmacêuticas
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Pontos de crédito:</strong> 191,25
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Descrição da qualificação:</strong>
-                            A execução de todos os atos inerentes ao exercício de funções de coadjuvação na
-                            área farmacêutica, sob o controlo e supervisão do diretor técnico da farmácia, em
-                            conformidade com a regulamentação aplicável e as
-                            normas de segurança e saúde no trabalho e de qualidade.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 15px;">
-                            <strong>Observações:</strong> Esta qualificação permite o acesso a uma profissão/atividade
-                            profissional regulamentada
-                            <button class="button" onmouseover="myFunction()" value="Observações!">?</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Entidade:</strong> Centro de Emprego e Formação Profissional da Amadora
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Modalidade:</strong> Curso EFA (EFA)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Strong>Estado Profissional:</Strong> Inscrito <strong>Data:</strong> 24/10/2022
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Coordenadora:</strong> Mariana Fernandes Rodrigues
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Mediadora:</strong> Ana Paula Sarandeses
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Referencial-->
-        <section class="resume-section" id="Referencial">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Referencial</h2>
-                <h3 class="mb-0">Lista de módulos</h3>
-                <!--tabela-->
-                <table class="lead m-5">
-                    <!--1-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(1)_UFCD 10145.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10145 (1) - Enquadramento do sector
-                                    farmacêutico
-                                </strong>
-                            </a> - Elsa Grilo - 25h - 30/01/2023
-                        </td>
-                    </tr>
-                    <!--2-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(2)_UFCD 10146.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10146 (2) - O medicamento – formas farmacêuticas,
-                                    vias de administração e o seu percurso no
-                                    organismo
-                                </strong>
-                            </a> - Teresa Cabeças - 25h - 11/07/2023
-                        </td>
-                    </tr>
-                    <!--3-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(3)_UFCD 10147.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10147 (3) - Reações adversas a medicamentos –
-                                    farmacovigilância
-                                </strong>
-                            </a> - Miguel Silvestre - 25h - 12/06/2023
-                        </td>
-                    </tr>
-                    <!--4-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(4)_UFCD 10148.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10148 (4) - Sistema imunitário – imunidade e
-                                    defesas do organismo
-                                </strong>
-                            </a> - Nuno Rolão - 25h - 24/05/2023
-                        </td>
-                    </tr>
-                    <!--5-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(5)_UFCD 10149.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10149 (5) - Noções básicas do sistema nervoso e o aconselhamento na
-                                    farmácia
-                                </strong>
-                            </a> - Diana Vieira - 25h - 18/05/2023
-                        </td>
-                    </tr>
-                    <!--6-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10150 (6) - Noções básicas do sistema respiratório e o aconselhamento
-                                    na
-                                    farmácia
-                                </strong>
-                            </a> - Sara Almada - 50h -
-                        </td>
-                    </tr>
-                    <!--7-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(7)_UFCD 10151.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10151 (7) - Noções básicas do sistema
-                                    gastrointestinal e o aconselhamento na farmácia
-                                </strong>
-                            </a> - Raquel Barreiros - 25h - 13/04/2023
-                        </td>
-                    </tr>
-                    <!--8-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(8)_UFCD 10152.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10152 (8) - Noções básicas do sistema
-                                    cardiovascular e o aconselhamento na farmácia
-                                </strong>
-                            </a> - Diana Vieira - 25h - 18/05/2023
-                        </td>
-                    </tr>
-                    <!--9-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(9)_UFCD 10153.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10153 (9) - Noções básicas do sistema reprodutor e
-                                    o aconselhamento na farmácia
-                                </strong>
-                            </a> - Teresa Cabeças - 25h - 11/07/2023
-                        </td>
-                    </tr>
-                    <!--10-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(10)_UFCD 10154.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10154 (10) - Noções básicas da pele e o
-                                    aconselhamento na farmácia
-                                </strong>
-                            </a> - Elsa Grilo - 25h - 30/01/2023
-                        </td>
-                    </tr>
-                    <!--11-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10155 (11) - Noções básicas sobre as principais
-                                    alterações metabólicas e o aconselhamento na
-                                    farmácia
-                                </strong>
-                            </a> - Margarida Mamede - 25h -
-                        </td>
-                    </tr>
-                    <!--12-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(12)_UFCD 10156.pdf">
-                                <strong>
-                                    UFCD: 10156 (12) - Noções básicas sobre antibioterapia e o
-                                    aconselhamento na farmácia
-                                </strong>
-                            </a> - Miguel Silvestre - 25h - 12/06/2023
-                        </td>
-                    </tr>
-                    <!--13-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10157 (13) - Procedimentos de receção, conferência e
-                                    armazenamento de medicamentos e produtos de saúde
-                                </strong>
-                            </a> - Marisa Silva - 25h -
-                        </td>
-                    </tr>
-                    <!--14-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(14)_UFCD 10158.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10158 (14) - Procedimentos de controlo de
-                                    existências e prazos de validade de medicamentos e
-                                    produtos de saúde
-                                </strong>
-                            </a> - Marta Pinto - 25h - 20/04/2023
-                        </td>
-                    </tr>
-                    <!--15-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10159 (15) - Gestão do processo de encomendas de
-                                    medicamentos e produtos de saúde
-                                </strong>
-                            </a> - Margarida Mamede - 25h -
-                        </td>
-                    </tr>
-                    <!--16-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10160 (16) - Gestão do processo de devoluções de
-                                    medicamentos e produtos de saúde
-                                </strong>
-                            </a> - Joana Ferreira - 25h -
-                        </td>
-                    </tr>
-                    <!--17-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>UFCD: 10161 (17) - Gestão de stocks da farmácia</strong>
-                            </a>- Marta Pinto - 25h -
-                        </td>
-                    </tr>
-                    <!--18-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10162 (18) - Procedimentos de conferência de
-                                    receituário
-                                </strong>
-                            </a> - Joana Ferreira - 25h -
-                        </td>
-                    </tr>
-                    <!--19-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(19)_UFCD 0349.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 0349 (19) - Ambiente, Segurança, Higiene e Saúde no
-                                    Trabalho - conceitos básicos
-                                </strong>
-                            </a> - Nuno Rolão - 25h - 24/05/2023
-                        </td>
-                    </tr>
-                    <!--20-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(20)_UFCD 10163.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10163 (20) - Boas práticas de segurança e saúde na
-                                    farmácia
-                                </strong>
-                            </a> - Sandra Sequeira - 25h - 09/02/2023
-                        </td>
-                    </tr>
-                    <!--21-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(21)_UFCD 6570.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 6570 (21) - Abordagem geral de noções básicas de
-                                    primeiros socorros
-                                </strong>
-                            </a> - Frederico Rocha - 25h - 05/12/2022
-                        </td>
-                    </tr>
-                    <!--22-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(22)_UFCD 9832.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 9832 (22) - Fundamentos do marketing
-                                </strong>
-                            </a> - Carla Coelho - 25h - 09/02/2023
-                        </td>
-                    </tr>
-                    <!--23-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(23)_UFCD 2677.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 2677 (23) - Estratégias de marketing
-                                </strong>
-                            </a> - Carla Coelho - 25h - 09/02/2023
-                        </td>
-                    </tr>
-                    <!--24-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(24)_UFCD 0403.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 0403 (24) - Relacionamento interpessoal
-                                </strong>
-                            </a> - Carla Coelho - 25h - 12/06/2023
-                        </td>
-                    </tr>
-                    <!--25-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(25)_UFCD 5440.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 5440 (25) - Comunicação interpessoal e
-                                    assertividade
-                                </strong>
-                            </a> - Neusa Fontes - 25h - 18/05/2023
-                        </td>
-                    </tr>
-                    <!--26-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(26)_UFCD 4365.pdf" target="_blank">
-                                <strong> UFCD: 4365 (26) - Técnicas de venda</strong>
-                            </a> - Cristina Vasconcelos- 25h - 13/04/2023
-                        </td>
-                    </tr>
-                    <!--27-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 0704 (27) - Atendimento - técnicas de
-                                    comunicação
-                                </strong>
-                            </a> - Neusa Fontes - 25h
-                        </td>
-                    </tr>
-                    <!--28-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(28)_UFCD 5897.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 5897 (28) - Atendimento e venda presencial
-                                </strong>
-                            </a> - Cristina Vasconcelos - 25h - 13/04/2023
-                        </td>
-                    </tr>
-                    <!--29-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>UFCD: 3492 (29) - Atendimento - inglês técnico</strong>
-                            </a> - Helena Marques - 50h -
-                        </td>
-                    </tr>
-                    <!--30-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 7266 (30) - Gestão e tratamento de
-                                    reclamações
-                                </strong>
-                            </a> - Cristina Vasconcelos - 25h -
-                        </td>
-                    </tr>
-                    <!--31-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(31)_UFCD 10164.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10164 (31) - Protocolos de dispensa de medicamentos
-                                    não sujeitos a receita médica
-                                </strong>
-                            </a> - Renata Passos - 25h - 24/05/2023
-                        </td>
-                    </tr>
-                    <!--32-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10165 (32) - Técnicas de execução de determinações
-                                    de parâmetros na farmácia
-                                </strong>
-                            </a> - Miguel Silvestre - 25h -
-                        </td>
-                    </tr>
-                    <!--33-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(33)_UFCD 10166.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10166 (33) - Sistemas Informáticos aplicados à
-                                    atividade comercial na farmácia
-                                </strong>
-                            </a> - João Hall - 50h - 31/07/2023
-                        </td>
-                    </tr>
-                    <!--34-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(34)_UFCD 4651.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 4651 (34) - Gestão de stress e gestão de
-                                    conflitos
-                                </strong>
-                            </a> - Elsa Sacadura - 25h - 11/07/2023
-                        </td>
-                    </tr>
-                    <!--35-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(35)_UFCD 6538.pdf" target="_blank">
-                                <strong> UFCD: 6538 (35) - Trabalho em equipa</strong>
-                            </a> - Elsa Sacadura - 25h - 11/07/2023
-                        </td>
-                    </tr>
-                    <!--36-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(36)_UFCD 4793.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 4793 (36) - Introdução à gestão da qualidade
-                                </strong>
-                            </a> - João Malaquias - 25h - 29/04/2023
-                        </td>
-                    </tr>
-                    <!--37-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10167 (37) - Boas práticas em farmácia
-                                </strong>
-                            </a> - Sandra Sequeira - 25h -
-                        </td>
-                    </tr>
-                    <!--38-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(38)_UFCD 10168.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10168 (38) - Noções gerais de veterinária e o
-                                    aconselhamento na farmácia
-                                </strong>
-                            </a> - João Hall - 25h - 31/07/2023
-                        </td>
-                    </tr>
-                    <!--39-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10171 (39) - Dermofarmácia e cosmética e o
-                                    aconselhamento na farmácia
-                                </strong>
-                            </a> - Marisa Silva - 25h -
-                        </td>
-                    </tr>
-                    <!--40-->
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <strong>
-                                    UFCD: 10172 (40) - Higiene oral e o aconselhamento na
-                                    farmácia
-                                </strong>
-                            </a> - João Hall - 25h -
-                        </td>
-                    </tr>
-                    <!--41-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(41)_UFCD 10175.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 10175 (41) - Puericultura e o aconselhamento na
-                                    farmácia
-                                </strong>
-                            </a> - Renata Passos - 25h - 02/03/2023
-                        </td>
-                    </tr>
-                    <!--42-->
-                    <tr>
-                        <td>
-                            <a href="reflexões/(42)_UFCD 9822.pdf" target="_blank">
-                                <strong>
-                                    UFCD: 9822 (42) - Poupança – conceitos básicos
-                                </strong>
-                            </a> - João Malaquias - 25h - 29/04/2023
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!--estagio-->
-        <section class="resume-section" id="estagio">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Local de estagio</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Farmácia Forum Castelo Branco</h3>
-                        <div class="text-left">
-                            <ul class="fa-ul mb-2">
-                                <li>
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                    <a href="https://www.facebook.com/profile.php?id=100063282185782">Farmácia Forum
-                                        Castelo
-                                        Branco</del></a>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-map"></i>
-                                    <a
-                                        href="https://www.google.com/maps/dir//Forum+Castelo+Branco,+Av.+Prof.+Dr.+Egas+Moniz,+6000-459+Castelo+Branco/@39.807858,-7.51699,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd3d5eb071cd02c9:0xfa13d367d0b082d!2m2!1d-7.5148196!2d39.8080899!3e0?hl=pt-PT&entry=ttu">Fórum
-                                        Castelo Branco lj. 0.24/0.25, Av. Prof. Dr. Egas
-                                        Moniz 901, 6000-901 Castelo Branco</a>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <a
-                                        href="mailto:tanaraexpressocbranco@farmaciastanara.pt">tanaraexpressocbranco@farmaciastanara.pt</a>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-phone"></i>
-                                    272346357
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-file"></i>
-                                    <a href="#">Relatorio</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <span class="text-primary">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12259.804162828352!2d-7.514820000000001!3d39.80809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5eb071cd02c9%3A0xfa13d367d0b082d!2sForum%20Castelo%20Branco!5e0!3m2!1spt-PT!2spt!4v1691571130657!5m2!1spt-PT!2spt"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </span>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none" style="font-size: 13px;">
+        <img src="img/logo.png" alt="logo" width="18%" alt="" style="padding: 0px;" style="margin: 0px;">
+        Reflexivo de
+        Aprendizagens
+      </span>
+      <span class="d-none d-lg-block" style="font-size: 16px;">
+        <img src="img/logo.png">
+        <br>Reflexivo de Aprendizagens
+        <br>
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
+      </span>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Apresentação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Autobiografia">Autobiografia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Estudos">Estudos & Certificações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Cursos">Curso</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Referencial">Referencial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#estagio">Estágio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#final">Balanço final do curso</a>
+        </li>
+        <li class="small copyright-text">
+          Copyright&copy; 2023.Portfólio TAF06 Designed by
+          <a href="https://franciscojosereis.github.io/portefolio/" target="\">Francisco Reis</a>
+        </li>
+      </ul>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+  </nav>
+  <div class="container-fluid p-0">
+    <!--about-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">
+          Francisco
+          <span class="text-primary">Reis</span>
+        </h1>
+        <div class="subheading mb-5">
+          Escalos De Baixo, Castelo Branco
+          ·
+          <a href="mailto:fjreis@outlook.com">fjreis@outlook.com</a>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <div class="text-justify">
+              Bem-vindo ao meu portfólio de aprendizagem.
+              <br>
+              O meu nome é Francisco Reis e criei este sítio web para mostrar o meu
+              progresso no curso Técnico Auxiliar de Farmácia e as competências que adquiri.
+              <br>
+              Aqui, observará a minha trajetória, incluindo autobiografia, descrição do curso, referencial e estágio.
+              <br>
+              Começo por apresentar a minha formação académica e certificações.
+              <br>
+              Depois, detalho o curso, abordando Nível QNQ/QEQ, área de educação e objetivos.
+              <br>
+              O referencial do curso traz as minhas reflexões sobre os módulos e a sua relação com a minha formação.
+              <br>
+              Depois, falo sobre o meu local de estágio e a
+              experiência que adquiri durante essa etapa. Descrevo as atividades que realizei e como elas contribuíram
+              para
+              o meu
+              desenvolvimento pessoal e profissional.
+              <br>
+              Finalmente, apresento o balanço final do curso, onde compartilho os meus
+              pensamentos finais sobre a minha jornada de aprendizado e os resultados que consegui alcançar. Este será
+              um
+              momento para
+              refletir sobre o que aprendi e como aplico esse conhecimento na minha carreira.
+              <br>
+              Espero que este portfólio de aprendizagem possa fornecer uma visão geral do meu percurso de formação e
+              demonstrar o meu
+              compromisso em me tornar um profissional qualificado e experiente. Obrigado por visitar o meu portfólio
+              e
+              espero que
+              encontre informações valiosas aqui.
+            </div>
+          </div>
+        </div>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/franciscoramosreis" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/francisco-reis-9541a9266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJZh%2BANeHSea%2B92qJMOhOcw%3D%3D"
+              target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://franciscojosereis.github.io/portefolio/" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Autobiografia-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="Autobiografia">
+      <div class="my-auto">
+        <h2 class="mb-5">Autobiografia</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Sobre mim</h3>
+            <div class="text-justify">
+              O meu nome é Francisco José Ramos Reis, nasci em 12 de junho de 1968 na pequena aldeia de Escalos de
+              Baixo, no concelho
+              de Castelo Branco. Os meus pais eram emigrantes e, por isso, vivi com eles em França. Após os meus pais
+              regressaram a
+              Portugal, tinha eu 18 anos, comecei a trabalhar em vários empregos até me estabelecer como ladrilhador
+              na
+              construção
+              civil.
+              <br>
+              Sempre gostei de conviver com os amigos e foi através desses convívios que descobri a minha paixão pelo
+              xadrez, joguei
+              numa equipa da 3.ª divisão, tendo sido, em 1997, vice-campeão distrital em Castelo Branco. A paixão pela
+              informática
+              também surgiu através desses convívios. Paixão que me levou a voltar aos estudos, onde através do
+              programa
+              das novas
+              oportunidades fiz uma formação EFA para concluir o nível 3 , na escola secundária de Santo André. Depois
+              em 2011 iniciei
+              um curso NS PRO - Técnico de Informática – Sistemas, nessa altura residia no Barreiro. Barreiro onde
+              vivi
+              14
+              anos, até a data do falecimento da minha esposa em 2019.
+              <br>
+              Após a morte da minha esposa, tive de regressar à casa dos meus pais, em Castelo Branco. Devido à
+              precariedade do
+              trabalho na construção e à pandemia, que afetou muito o setor da construção civil, fiquei desempregado.
+              Para encontrar
+              alternativas de trabalho, comecei a trabalhar num call center. Mas, para melhorar as minhas perspetivas
+              de
+              carreira,
+              decidi investir em formação profissional. Em novembro de 2020, iniciei o curso NS PRO - Técnico de
+              Gestão
+              do Ambiente,
+              mas não pude ignorar a minha paixão pela informática e voltei para o curso NS PRO - Técnico de
+              Informática
+              – Sistemas,
+              que tinha deixado por concluir. Concluí com êxito essa formação em maio de 2022.
+              <br>
+              Embora não tenha conseguido colocação na empresa onde fiz estágio, devido à pandemia, não me deixei
+              desanimar e
+              continuei a procurar oportunidades de formação e desenvolvimento profissional. Foi assim que encontrei o
+              curso NS PRO -
+              Técnico Auxiliar de Farmácia na página do IEFP. Como a área da saúde tem muita procura, acredito que
+              este
+              curso será
+              valioso tanto financeiramente quanto pessoalmente, permitindo-me relançar a minha carreira e a minha
+              vida
+              no mercado de
+              trabalho.
+              Com a minha experiência de vida e a minha dedicação aos estudos, estou confiante de que encontrarei uma
+              oportunidade de
+              trabalho gratificante e contribuirei para a sociedade de maneira positiva. Apesar dos altos e baixos,
+              estou feliz com a
+              minha vida e grato pelas oportunidades que tenho tido. Sinto-me otimista relativamente ao futuro e
+              ansioso
+              por ver o que
+              o destino me reserva.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Estudos-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="Estudos">
+      <div class="my-auto">
+        <h2 class="mb-5">Estudos & Certificações</h2>
+        <ul class="fa-ul mb-3 text-justify">
+          <li>
+            <i class="fa-li fa fa-university text-warning"></i>
+            Ensino secundário:
+            <h5>12.º ano — Modalidade: Curso EFA (EFA)</h5>
+          </li>
+          <li>
+            <i class="fa-li fa fa-file  commons text-warning"></i>
+            Qualificação Profissional:
+            <h5>Técnico/a de Gestão do Ambiente — Estado Profissional: Certificado Parcial</h5>
+          </li>
+          <li>
+            <i class="fa-li fa fa-certificate text-warning"></i>
+            Qualificação Profissional:
+            <h5>Técnico/a de Informática - Sistemas — Estado Profissional: Certificado</h5>
+          </li>
+          <li>
+            <i class="fa-li fa fa-book text-warning"></i>
+            Qualificação Profissional:
+            <h5>Técnico/a Auxiliar de Farmácia — Estado Profissional: Inscrito</h5>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Cursos-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="Cursos">
+      <div class="my-auto">
+        <h2 class="mb-0">Curso</h2>
+        <h3>Técnico/a Auxiliar de Farmácia</h3>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <table class="text-justify">
+              <tr>
+                <td>
+                  <strong>Nível QNQ/QEQ:</strong>
+                  4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Código:</strong>
+                  727366
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Criado em:</strong>
+                  2018-12-29
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Data da última alteração</strong>
+                  2020-07-22
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Área de educação e formação:</strong>
+                  727 - Ciências Farmacêuticas
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Pontos de crédito:</strong>
+                  191,25
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Descrição da qualificação:</strong>
+                  A execução de todos os atos inerentes ao exercício de funções de coadjuvação na
+                  área farmacêutica, sob o controlo e supervisão do diretor técnico da farmácia, em
+                  conformidade com a regulamentação aplicável e as
+                  normas de segurança e saúde no trabalho e de qualidade.
+                </td>
+              </tr>
+              <tr>
+                <td style="font-size: 15px;">
+                  <strong>Observações:</strong>
+                  Esta qualificação permite o acesso a uma profissão/atividade
+                  profissional regulamentada
+                  <button class="button" onmouseover="myFunction()" value="Observações!">?</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Entidade:</strong>
+                  Centro de Emprego e Formação Profissional da Amadora
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Modalidade:</strong>
+                  Curso EFA (EFA)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <Strong>Estado Profissional:</Strong>
+                  Inscrito
+                  <strong>Data:</strong>
+                  24/10/2022
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Coordenadora:</strong>
+                  Mariana Fernandes Rodrigues
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Mediadora:</strong>
+                  Ana Paula Sarandeses
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Referencial-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="Referencial">
+      <div class="my-auto">
+        <h2 class="mb-5">Referencial</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Lista de módulos</h3>
+            <!--tabela-->
+            <table class="wp-table">
+              <!--cabeçalho-->
+              <tr>
+                <th>Código (Nº) - Designação da UFCD</th>
+                <th>Horas</th>
+                <th>Pontos</th>
+              </tr>
+              <!--1-->
+              <tr>
+                <td>
+                  <a href="reflexões/(1)_UFCD 10145.pdf" target="_blank">
+                    <strong>
+                      10145 (1) - Enquadramento do sector
+                      farmacêutico
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--2-->
+              <tr>
+                <td>
+                  <a href="reflexões/(2)_UFCD 10146.pdf" target="_blank">
+                    <strong>
+                      10146 (2) - O medicamento – formas farmacêuticas,
+                      vias de administração e o seu percurso no
+                      organismo
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--3-->
+              <tr>
+                <td>
+                  <a href="reflexões/(3)_UFCD 10147.pdf" target="_blank">
+                    <strong>
+                      10147 (3) - Reações adversas a medicamentos –
+                      farmacovigilância
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--4-->
+              <tr>
+                <td>
+                  <a href="reflexões/(4)_UFCD 10148.pdf" target="_blank">
+                    <strong>
+                      10148 (4) - Sistema imunitário – imunidade e
+                      defesas do organismo
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--5-->
+              <tr>
+                <td>
+                  <a href="reflexões/(5)_UFCD 10149.pdf" target="_blank">
+                    <strong>
+                      10149 (5) - Noções básicas do sistema nervoso e o aconselhamento na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--6-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10150 (6) - Noções básicas do sistema respiratório e o aconselhamento
+                      na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>50</td>
+                <td>4.50</td>
+              </tr>
+              <!--7-->
+              <tr>
+                <td>
+                  <a href="reflexões/(7)_UFCD 10151.pdf" target="_blank">
+                    <strong>
+                      10151 (7) - Noções básicas do sistema
+                      gastrointestinal e o aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--8-->
+              <tr>
+                <td>
+                  <a href="reflexões/(8)_UFCD 10152.pdf" target="_blank">
+                    <strong>
+                      10152 (8) - Noções básicas do sistema
+                      cardiovascular e o aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--9-->
+              <tr>
+                <td>
+                  <a href="reflexões/(9)_UFCD 10153.pdf" target="_blank">
+                    <strong>
+                      10153 (9) - Noções básicas do sistema reprodutor e
+                      o aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--10-->
+              <tr>
+                <td>
+                  <a href="reflexões/(10)_UFCD 10154.pdf" target="_blank">
+                    <strong>
+                      10154 (10) - Noções básicas da pele e o
+                      aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--11-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10155 (11) - Noções básicas sobre as principais
+                      alterações metabólicas e o aconselhamento na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--12-->
+              <tr>
+                <td>
+                  <a href="reflexões/(12)_UFCD 10156.pdf">
+                    <strong>
+                      10156 (12) - Noções básicas sobre antibioterapia e o
+                      aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--13-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10157 (13) - Procedimentos de receção, conferência e
+                      armazenamento de medicamentos e produtos de saúde
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--14-->
+              <tr>
+                <td>
+                  <a href="reflexões/(14)_UFCD 10158.pdf" target="_blank">
+                    <strong>
+                      10158 (14) - Procedimentos de controlo de
+                      existências e prazos de validade de medicamentos e
+                      produtos de saúde
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--15-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10159 (15) - Gestão do processo de encomendas de
+                      medicamentos e produtos de saúde
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--16-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10160 (16) - Gestão do processo de devoluções de
+                      medicamentos e produtos de saúde
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--17-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>10161 (17) - Gestão de stocks da farmácia</strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--18-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10162 (18) - Procedimentos de conferência de
+                      receituário
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--19-->
+              <tr>
+                <td>
+                  <a href="reflexões/(19)_UFCD 0349.pdf" target="_blank">
+                    <strong>
+                      0349 (19) - Ambiente, Segurança, Higiene e Saúde no
+                      Trabalho - conceitos básicos
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--20-->
+              <tr>
+                <td>
+                  <a href="reflexões/(20)_UFCD 10163.pdf" target="_blank">
+                    <strong>
+                      10163 (20) - Boas práticas de segurança e saúde na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--21-->
+              <tr>
+                <td>
+                  <a href="reflexões/(21)_UFCD 6570.pdf" target="_blank">
+                    <strong>
+                      6570 (21) - Abordagem geral de noções básicas de
+                      primeiros socorros
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--22-->
+              <tr>
+                <td>
+                  <a href="reflexões/(22)_UFCD 9832.pdf" target="_blank">
+                    <strong>
+                      9832 (22) - Fundamentos do marketing
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--23-->
+              <tr>
+                <td>
+                  <a href="reflexões/(23)_UFCD 2677.pdf" target="_blank">
+                    <strong>
+                      2677 (23) - Estratégias de marketing
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--24-->
+              <tr>
+                <td>
+                  <a href="reflexões/(24)_UFCD 0403.pdf" target="_blank">
+                    <strong>
+                      0403 (24) - Relacionamento interpessoal
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--25-->
+              <tr>
+                <td>
+                  <a href="reflexões/(25)_UFCD 5440.pdf" target="_blank">
+                    <strong>
+                      5440 (25) - Comunicação interpessoal e
+                      assertividade
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--26-->
+              <tr>
+                <td>
+                  <a href="reflexões/(26)_UFCD 4365.pdf" target="_blank">
+                    <strong>4365 (26) - Técnicas de venda</strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--27-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      0704 (27) - Atendimento - técnicas de
+                      comunicação
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--28-->
+              <tr>
+                <td>
+                  <a href="reflexões/(28)_UFCD 5897.pdf" target="_blank">
+                    <strong>
+                      5897 (28) - Atendimento e venda presencial
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--29-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>3492 (29) - Atendimento - inglês técnico</strong>
+                  </a>
+                </td>
+                <td>50</td>
+                <td>4.50</td>
+              </tr>
+              <!--30-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      7266 (30) - Gestão e tratamento de
+                      reclamações
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--31-->
+              <tr>
+                <td>
+                  <a href="reflexões/(31)_UFCD 10164.pdf" target="_blank">
+                    <strong>
+                      10164 (31) - Protocolos de dispensa de medicamentos
+                      não sujeitos a receita médica
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--32-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10165 (32) - Técnicas de execução de determinações
+                      de parâmetros na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--33-->
+              <tr>
+                <td>
+                  <a href="reflexões/(33)_UFCD 10166.pdf" target="_blank">
+                    <strong>
+                      10166 (33) - Sistemas Informáticos aplicados à
+                      atividade comercial na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>50</td>
+                <td>4.50</td>
+              </tr>
+              <!--34-->
+              <tr>
+                <td>
+                  <a href="reflexões/(34)_UFCD 4651.pdf" target="_blank">
+                    <strong>
+                      4651 (34) - Gestão de stress e gestão de
+                      conflitos
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--35-->
+              <tr>
+                <td>
+                  <a href="reflexões/(35)_UFCD 6538.pdf" target="_blank">
+                    <strong>6538 (35) - Trabalho em equipa</strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--36-->
+              <tr>
+                <td>
+                  <a href="reflexões/(36)_UFCD 4793.pdf" target="_blank">
+                    <strong>
+                      4793 (36) - Introdução à gestão da qualidade
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--37-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10167 (37) - Boas práticas em farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--38-->
+              <tr>
+                <td>
+                  <a href="reflexões/(38)_UFCD 10168.pdf" target="_blank">
+                    <strong>
+                      10168 (38) - Noções gerais de veterinária e o
+                      aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--39-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10171 (39) - Dermofarmácia e cosmética e o
+                      aconselhamento na farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--40-->
+              <tr>
+                <td>
+                  <a href="#">
+                    <strong>
+                      10172 (40) - Higiene oral e o aconselhamento na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--41-->
+              <tr>
+                <td>
+                  <a href="reflexões/(41)_UFCD 10175.pdf" target="_blank">
+                    <strong>
+                      10175 (41) - Puericultura e o aconselhamento na
+                      farmácia
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+              <!--42-->
+              <tr>
+                <td>
+                  <a href="reflexões/(42)_UFCD 9822.pdf" target="_blank">
+                    <strong>
+                      9822 (42) - Poupança – conceitos básicos
+                    </strong>
+                  </a>
+                </td>
+                <td>25</td>
+                <td>2.25</td>
+              </tr>
+            </table>
+            <!--fim tabela-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--estagio-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="estagio">
+      <div class="my-auto">
+        <h2 class="mb-5">Local de estagio</h2>
+        <div class="">
+          <h3>Farmácia Forum Castelo Branco (Provisória )</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 " style="font-size: 17px;">
+            <div class="text-left">
+              <ul class="fa-ul mb-2">
+                <li>
+                  <i class="fa-li fa fa-facebook"></i>
+                  <a href="https://www.facebook.com/profile.php?id=100063282185782">
+                    Farmácia Forum Castelo
+                    Branco
+                    </del>
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-map"></i>
+                  <a
+                    href="https://www.google.com/maps/dir//Forum+Castelo+Branco,+Av.+Prof.+Dr.+Egas+Moniz,+6000-459+Castelo+Branco/@39.807858,-7.51699,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd3d5eb071cd02c9:0xfa13d367d0b082d!2m2!1d-7.5148196!2d39.8080899!3e0?hl=pt-PT&entry=ttu">
+                    Av. Prof. Dr. Egas
+                    Moniz 901, 6000-901 Castelo Branco
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-envelope"></i>
+                  <a href="mailto:tanaraexpressocbranco@farmaciastanara.pt">Farmácia Forum Castelo Branco</a>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-phone"></i>
+                  272346357
+                </li>
+                <li>
+                  <i class="fa-li fa fa-file-archive-o"></i>
+                  <a href="#">Relatorio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-right">
+              <div class="google-map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.9508627158066!2d-7.517394523207725!3d39.808093992456804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5eb071cd02c9%3A0xfa13d367d0b082d!2sForum%20Castelo%20Branco!5e0!3m2!1spt-PT!2spt!4v1691585829304!5m2!1spt-PT!2spt"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--final-->
+    <section class="resume-section p-3 p-lg-5 flex-column" id="final">
+      <div class="my-auto">
+        <h2 class="mb-5">Balanço final do curso</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <div class="text-justify">
+              Antes de mais, quero expressar o meu cordial reconhecimento à mediadora Mariana Fernandes Rodrigues
+              e à coordenadora
+              Paula Sarandeses pelo seus empenho e dedicação em orientar o curso. Pretendo, também expressar a
+              minha gratidão a todos
+              as formadoras e formadores competentes que partilharam, valiosos conhecimentos, com paixão e métodos
+              educativos
+              eficazes. As sessões foram extremamente enriquecedoras e contribuíram significativamente para o meu
+              desenvolvimento como
+              Técnico Auxiliar de Farmácia.
+              <br>
+              Graças a equipe formativa, adquiri saberes essenciais para uma melhor
+              compreensão de todos
+              os conceitos fundamentais, preparando-me para exercer as minhas funções com mais segurança e
+              eficácia. Sou sinceramente
+              grato pela excelente formação que recebi.
+              Durante a minha preparação na área da saúde, aprendi uma ampla gama de conceitos, sendo que os mais
+              importantes incluem
+              prescrição, dispensa e conferência de receitas, direitos e deveres dos clientes e ética em saúde.
+              Além disso, também
+              aprendi sobre o layout das instalações de farmácia, técnicas de marketing e promoção utilizadas no
+              setor, ciclo de vida
+              de medicamentos e produtos de saúde, aplicação da língua inglesa no atendimento ao público e muito
+              mais......continuar
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 </body>
 
 </html>
