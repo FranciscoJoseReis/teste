@@ -2,7 +2,7 @@
 <html lang="PT">
 
 <head>
-    <title></title>
+    <title>Meu Portefólio</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -41,8 +41,8 @@
 
             window.open(url, 'Popup de Imagem', 'width=' + largura + ', height=' + altura + ', left=' + left + ', top=' + top);
         }
-
     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
 
 </head>
 
@@ -52,7 +52,7 @@
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" alt="" />
                 <h1 class="name">Francisco Reis</h1>
-                <h3 class="tagline"></h3>
+                <h3 class="tagline">Portefólio reflexivo de aprendizagem</h3>
             </div><!--//profile-container-->
 
             <div class="contact-container container-block">
@@ -93,8 +93,8 @@
                 <h2 class="container-block-title">Línguas</h2>
                 <ul class="list-unstyled interests-list">
                     <li>Português <span class="lang-desc">(Nativo)</span></li>
-                    <li>Francês <span class="lang-desc">(Profissional)</span></li>
-                    <li>Inglês <span class="lang-desc">(Professional)</span></li>
+                    <li>Francês <span class="lang-desc">Nível 5 (C1)</span></li>
+                    <li>Inglês <span class="lang-desc">Nível 3 (B1)</span></li>
                 </ul>
             </div>
             <!--
@@ -106,6 +106,20 @@
                     <li>Cooking</li>
                 </ul>
             </div>-->
+            <div class="interests-container container-block">
+                <ul class="list-unstyled interests-list">
+                    <li>
+                        <div id="current_date" style="text-align: center;"></div>
+                        <script>
+                            var data = moment()
+                                .locale("pt-br")
+                                .format("dddd, D [de] MMMM [de] YYYY");
+                            document.getElementById("current_date").innerHTML = data;
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        
 
         </div><!--//sidebar-wrapper-->
 
@@ -939,17 +953,23 @@
                             </div>
                             <ul class="list-inline list-social-icons mb-0">
                                 <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/profile.php?id=100063282185782" target="_blank">
+                                    <a
+                                        href="https://www.facebook.com/profile.php?id=100063282185782"
+                                        target="_blank">
                                         <span class="fa-stack fa-lg">
-                                            <img src="img/Logo/logo-facebook.png" alt="" width="85%">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i
+                                                class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
                                         </span>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://forumcastelobranco.com.pt/lojasdetalhes.aspx?id=238"
+                                    <a
+                                        href="https://forumcastelobranco.com.pt/lojasdetalhes.aspx?id=238"
                                         target="_blank">
                                         <span class="fa-stack fa-lg">
-                                            <img src="img/Logo/web-icon-logo.png" alt="" width="85%">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
                                         </span>
                                     </a>
                                 </li>

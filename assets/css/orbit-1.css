@@ -48,12 +48,12 @@ iframe {
   background-color: black;
   border: none;
   color: white;
-  padding: 2px 9px;
+  padding: 1px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: calc(9px + 0.390625vw);
-  margin: 5px 5px;
+  margin: 2px 5px;
   cursor: pointer;
   border-radius: 100%;
 }
