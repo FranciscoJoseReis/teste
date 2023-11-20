@@ -1,4 +1,4 @@
-/*! 
+/*
  * Template Name: Orbit - Bootstrap 5 Resume/CV Template for Developers
  * Version: Bootstrap 5 v3.0
  * Author: Xiaoying Riley
@@ -29,62 +29,10 @@ iframe {
   height: 100%;
 }
 
-.zoom {
-  transition: transform ease-in-out .2s;
-  /* Animation */
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  transform: scale(1.4);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 img {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
-}
-
-.button {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 1px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: calc(9px + 0.390625vw);
-  margin: 2px 5px;
-  cursor: pointer;
-  border-radius: 100%;
-}
-
-.tab {
-  border: 1px solid #ccc;
-  padding: 4px;
-  text-align: left;
-  vertical-align: center;
-}
-
-.tab tr {
-  border: 1px solid #ccc;
-}
-
-.tab a {
-  text-decoration: underline;
-  text-align: left;
-  padding-left: 2px;
-}
-
-.tab th:first-child,
-.tab td:first-child {
-  padding-left: 10px;
-}
-
-.tab strong {
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 body {
