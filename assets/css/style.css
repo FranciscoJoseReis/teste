@@ -78,7 +78,7 @@ p {
 
 .wrapper {
   background: #42A8C0;
-  max-width: 960px;
+  max-width: 1060px;
   margin: 0 auto;
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -212,7 +212,7 @@ p {
 
 .main-wrapper {
   background: #fff;
-  padding: 60px;
+  padding: 30px;
   padding-right: 300px;
 }
 
@@ -250,7 +250,7 @@ p {
 }
 
 .main-wrapper .section {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .main-wrapper .experiences-section .item {
